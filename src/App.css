@@ -1,0 +1,76 @@
+.Bingocontainer {
+    text-align: center;
+}
+
+.Bingobutton {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.Bingobutton button {
+  background-color: #4d4d4d; 
+  border: 2px solid #ffffff;
+  color: white;
+  padding: 10px 10px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px auto;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 150ms ease, color 150ms ease, transform 120ms ease;
+}
+
+.Bingobutton button:hover {
+  transform: translateY(-2px);
+}
+
+.Bingobutton button.liked {
+  background-color: #4caf50;
+  color: white;
+  border-color: #3e8e41;
+}
+
+/* Settings Container */
+.Settingscontainer {
+  margin-top: 2rem;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.settings-toggle {
+  width: 100%;
+  padding: 1rem;
+  background-color: #3a3a3a;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left;
+}
+
+.settings-toggle:hover {
+  background-color: #4a4a4a;
+}
+
+.settings-content {
+  padding: 1rem;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
